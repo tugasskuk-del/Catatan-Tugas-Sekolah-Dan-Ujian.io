@@ -1,1 +1,65 @@
-tugas ajggggggggggggggggggggggggggggggggggggggggggggggggggg
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catat Tugas — Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="login-page">
+  <main class="container-fluid min-vh-100">
+    <div class="row min-vh-100">
+      <div class="col-lg-7 d-none d-lg-flex login-brand">
+        <div class="brand-panel">
+          <div class="brand-mark"><i class="bi bi-check2-square"></i></div>
+          <span class="eyebrow">STUDENT TASK MANAGER</span>
+          <h1>Catat Tugas.<br><span>Beresi Satu per Satu.</span></h1>
+          <p>Kelola tugas sekolah dengan sederhana, cepat, dan rapi. Data tersimpan langsung di browser tanpa database.</p>
+          <div class="feature-row">
+            <span><i class="bi bi-check-circle-fill"></i> Ceklis tugas selesai</span>
+            <span><i class="bi bi-x-circle-fill"></i> Tandai belum selesai</span>
+            <span><i class="bi bi-cloud-slash"></i> Tanpa database</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-flex align-items-center justify-content-center">
+        <div class="login-card">
+          <div class="mobile-logo brand-mark"><i class="bi bi-check2-square"></i></div>
+          <p class="eyebrow text-secondary mb-2">SELAMAT DATANG</p>
+          <h2>Masuk ke aplikasi</h2>
+          <p class="text-secondary mb-4">Gunakan akun lokal untuk membuka catatan tugas.</p>
+
+          <form id="loginForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="username">Username</label>
+              <input class="form-control form-control-lg" id="username" type="text" placeholder="Masukkan username" autocomplete="username" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">Password</label>
+              <div class="input-group input-group-lg">
+                <input class="form-control" id="password" type="password" placeholder="Masukkan password" autocomplete="current-password" required>
+                <button class="btn btn-outline-dark" type="button" id="togglePassword" aria-label="Tampilkan password"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div id="loginAlert" class="alert alert-danger d-none" role="alert"></div>
+            <button class="btn btn-dark btn-lg w-100 py-3" type="submit">
+              Masuk <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+          </form>
+
+          <div class="demo-login">
+            <div><strong>Akun demo</strong><br><span>Username: <b>admin</b> · Password: <b>admin123</b></span></div>
+            <i class="bi bi-info-circle"></i>
+          </div>
+
+          <p class="small text-secondary mt-4 mb-0">© 2026 Catat Tugas · Data disimpan di perangkat kamu.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
